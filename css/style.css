@@ -1,0 +1,201 @@
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    line-height: 1.5;
+    font-size: 15px;
+    
+}
+
+header {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin: 16px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.row .col-1 {
+    width: 66%;
+}
+
+.card {
+    background-color: #fff;
+    padding-bottom: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    transition: all 1s;
+}
+
+.card:hover {
+    border-radius: 16px;
+}
+
+.card:hover .img-fluid {
+    border-top-left-radius:16px ;
+    border-top-right-radius:16px ;
+}
+
+.count {
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+.col-2 {
+    width: 33%;
+}
+
+.col-2 .card img {
+    height: 500px;
+}
+
+.mg-10 {
+    margin: 10px 0;
+}
+
+.pd-16 {
+    padding: 0 16px;
+}
+
+.mg-15 {
+    margin: 15px 0;
+}
+
+.f-right {
+    float: right;
+    padding: 12px 24px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 400px;
+    transition: all 1s;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.post, .tag {
+    margin: 16px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    transition: all 1s;
+
+}
+
+.post:hover, .tag:hover {
+    border-radius: 16px;
+}
+
+
+
+.post ul {
+    padding: 0;
+    margin: 0;
+}
+
+.post li {
+    list-style: none;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    transition: all 1s;
+
+}
+
+.post:hover li:nth-child(4) {
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+
+.post li:hover {
+    background-color: #ccc;
+}
+
+.post img{
+    float: left;
+    margin-right: 16px;
+}
+
+.tag {
+    background-color: #fff;
+    
+}
+
+.tag .tag-title, .post .post-title {
+    padding: 8px 16px;
+}
+
+.tag:hover .tag-title {
+    border-top-left-radius:16px ;
+    border-top-right-radius:16px ;
+}
+
+.tag-title {
+    background-color:#f1f1f1;
+    transition: all 1s;
+}
+
+.tag a {
+    text-decoration: none;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color:#f1f1f1;
+    color: black;
+}
+
+footer {
+    padding: 32px 16px;
+    margin-top: 16px;
+    background-color: #616161;
+}
+
+.btn-footer {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-1, .col-2 {
+        width: 100% !important;
+    }
+    
+}
